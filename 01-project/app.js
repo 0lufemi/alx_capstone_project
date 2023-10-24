@@ -8,7 +8,9 @@ function iconSelector() {
         sectionBtn[i].addEventListener('click', function() {
             let selectedBtn = document.querySelectorAll('.active-btn');
             selectedBtn[0].className = selectedBtn[0].className.replace('active-btn', '');
-            this.className += 'active-btn';
+            this.className += ' active-btn';
         })
     }
 }
+
+iconSelector();

@@ -86,13 +86,13 @@ section{
     align-items: center;
     justify-content: center;
     transform: translateY(-50%);
-    // .active-btn{
-    //     background-color: var(--color-secondary) !important;
-    //     transition: var(--transition);
-    //     i{
-    //         color: var(--color-white) !important;
-    //     }
-    // }
+    .active-btn{
+        background-color: var(--color-secondary) !important;
+        transition: var(--transition);
+        i{
+            color: var(--color-white) !important;
+        }
+    }
     .control{
         padding: 1rem;
         cursor: pointer;
@@ -109,8 +109,8 @@ section{
             font-size: 1.2rem;
             color: var(--color-grey2);
         }
-        :hover{
-            color: #27ae60;
-        }
+        // :hover{
+        //     color: #27ae60;
+        // }
     }
 }

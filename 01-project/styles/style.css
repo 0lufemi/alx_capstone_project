@@ -90,6 +90,13 @@ section {
   justify-content: center;
   transform: translateY(-50%);
 }
+.controls .active-btn {
+  background-color: var(--color-secondary) !important;
+  transition: var(--transition);
+}
+.controls .active-btn i {
+  color: var(--color-white) !important;
+}
 .controls .control {
   padding: 1rem;
   cursor: pointer;
@@ -106,7 +113,4 @@ section {
 .controls .control i {
   font-size: 1.2rem;
   color: var(--color-grey2);
-}
-.controls .control :hover {
-  color: #27ae60;
 }/*# sourceMappingURL=style.css.map */
