@@ -15,14 +15,14 @@ Duration of presentation: **15 minutes**
 * ```5 minutes``` sample code explanation (The sample code shall be selected at random by the reviewer for you to explain)
 * ```5 minutes``` for questions and answers
 
-## 1. Personal Portfolio Website
-Create a personal portfolio website to showcase your skills, projects, and accomplishments.
+## 4. Blogging Platform
+Build a blogging platform that allows users to create, publish, and manage their blog posts.
 
 Required Tasks:
-* Design and implement a visually appealing and user-friendly website layout using HTML and CSS.
-* Include sections for an “about me”, skills, projects, and contact information.
-* Display your projects with brief descriptions, images, and links to live demos or source code repositories.
-* Implement responsive design to ensure the website looks good on different devices.
-* Add a contact form for visitors to reach out to you.
-* Validate the form inputs on the server-side to ensure they are not empty and meet any required criteria (e.g., valid email format).
-* Send an email notification to your specified email address when a form is submitted, containing the visitor’s information.
+* Design and implement a user-friendly interface using HTML and CSS for creating and editing blog posts.
+* Use a backend technology like Flask to handle user authentication and manage blog post data.
+* Implement features such as user registration, login, and password recovery.
+* Allow users to create, edit, and delete their blog posts with proper authorization.
+* Display blog posts in a visually appealing manner, including titles, excerpts, and publication dates.
+* Add functionality for users to comment on blog posts and display comments on the blog page.
+* Implement a search feature to allow users to search for blog posts by keywords or categories.
