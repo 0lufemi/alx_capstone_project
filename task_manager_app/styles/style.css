@@ -152,3 +152,8 @@ button
     color: white;
     border: none;
 }
+
+.error-prompt
+{
+    border: 1px solid red;
+}
