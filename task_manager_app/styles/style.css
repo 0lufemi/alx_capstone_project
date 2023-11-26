@@ -39,6 +39,7 @@ section:first-child
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: var(--spacing-large);
     /* border: 1px solid green; */
 }
 
@@ -156,4 +157,11 @@ button
 .error-prompt
 {
     border: 1px solid red;
+}
+
+#taskDisplay
+{
+    display: flex;
+    gap: var(--spacing-medium);
+    flex-wrap: wrap;
 }
