@@ -26,13 +26,13 @@ const displayTaskItems = (tasks) => {
 
     for (let itemPosition = 0; itemPosition < tasks.length; itemPosition++) {
         const task = tasks[itemPosition];
-        const item = createTaskItem(task);
+        const item = createTaskItem(task, itemPosition);
         taskDisplayDiv.appendChild(item);
     }
 }
 
 // Create Task cards
-const createTaskItem = (param) => {
+const createTaskItem = (param, position) => {
 
     // taskDisplayDiv.setAttribute('class', 'taskDisplay');
 
@@ -80,11 +80,19 @@ const createTaskItem = (param) => {
     const editBtn = document.createElement('button');
     editBtn.textContent = 'Edit';
     editBtn.setAttribute('class', 'btn-update');
+    // editBtn.addEventListener('click', function() {
+    //     console.log('You clicked edit:', param.activity);
+    // })
     btnGroupDiv.appendChild(editBtn);
 
     const delBtn = document.createElement('button');
     delBtn.textContent = 'Delete';
     delBtn.setAttribute('class', 'btn-danger');
+    delBtn.addEventListener('click', function() {
+        tasks.splice(position, 1);
+        displayTaskItems(tasks);
+    })
+
     btnGroupDiv.appendChild(delBtn);
 
 
