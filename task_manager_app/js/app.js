@@ -17,17 +17,28 @@ taskFormBtn.addEventListener("click", function () {
     tasks.push(taskValues);
     console.log(tasks);
 
-    createTaskItem()
+    displayTaskItems(tasks);
 });
 
-// Create Task cards
-const createTaskItem = () => {
+const displayTaskItems = (tasks) => {
     const taskDisplayDiv = document.getElementById('taskDisplay');
+    taskDisplayDiv.innerHTML = '';
+
+    for (let itemPosition = 0; itemPosition < tasks.length; itemPosition++) {
+        const task = tasks[itemPosition];
+        const item = createTaskItem(task);
+        taskDisplayDiv.appendChild(item);
+    }
+}
+
+// Create Task cards
+const createTaskItem = (param) => {
+
     // taskDisplayDiv.setAttribute('class', 'taskDisplay');
 
     const cardDiv = document.createElement('div');
     cardDiv.setAttribute('class', 'card')
-    taskDisplayDiv.appendChild(cardDiv);
+
 
     const imgGroupDiv = document.createElement('div');
     imgGroupDiv.setAttribute('class', 'img-group')
@@ -46,7 +57,7 @@ const createTaskItem = () => {
     cardBodyDiv.setAttribute('class', 'card-body');
 
     const h4 = document.createElement('h4');
-    h4.textContent = 'Activity Name';
+    h4.textContent = param.activity;
     cardBodyDiv.appendChild(h4);
 
     const paraDiv = document.createElement('div');
@@ -54,10 +65,10 @@ const createTaskItem = () => {
     cardBodyDiv.appendChild(paraDiv);
 
     const dateTimePara = document.createElement('p');
-    dateTimePara.textContent = 'Date: Time';
+    dateTimePara.textContent = `${param.date} : ${param.time}`;
 
     const taskStatusPara = document.createElement('p');
-    taskStatusPara.textContent = 'Task Status';
+    taskStatusPara.textContent = param.taskStatus;
 
     paraDiv.appendChild(dateTimePara);
     paraDiv.appendChild(taskStatusPara);

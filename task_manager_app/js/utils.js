@@ -25,7 +25,7 @@ const getActivityFields = () => {
     const date = dateInput.value;
     const time = timeInput.value;
 
-    return {activity, date, time}
+    return {activity, date, time, taskStatus: 'UNDONE'};
 }
 
 // Reset form fields after adding task
