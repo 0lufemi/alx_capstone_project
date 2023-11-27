@@ -92,6 +92,11 @@ section:first-child
     border: none;
 }
 
+.btn-primary:hover
+{
+    cursor: pointer;
+}
+
 .img-group
 {
     display: flex;
@@ -152,6 +157,11 @@ button
     background-color: green;
     color: white;
     border: none;
+}
+
+.btn-danger:hover, .btn-update:hover
+{
+    cursor: pointer;
 }
 
 .error-prompt
