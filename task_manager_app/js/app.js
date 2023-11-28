@@ -1,7 +1,8 @@
-import { validateForm, getActivityFields, reset } from './utils.js'
+import { validateForm, getActivityFields, reset, editTask } from './utils.js'
 
 const taskFormBtn = document.querySelector("#task-form-btn");
 const tasks = [];
+let taskPosition;
 
 // event listener for 'Add Task' button
 taskFormBtn.addEventListener("click", function () {
@@ -14,8 +15,13 @@ taskFormBtn.addEventListener("click", function () {
     const taskValues = getActivityFields();
     reset();
 
-    tasks.push(taskValues);
-    console.log(tasks);
+    if (this.value === 'Update Task') {
+        //update card
+        tasks[taskPosition] = taskValues;
+        this.value = 'Add Task';
+    } else {
+        tasks.push(taskValues);
+    }
 
     displayTaskItems(tasks);
 });
@@ -80,9 +86,11 @@ const createTaskItem = (param, position) => {
     const editBtn = document.createElement('button');
     editBtn.textContent = 'Edit';
     editBtn.setAttribute('class', 'btn-update');
-    // editBtn.addEventListener('click', function() {
-    //     console.log('You clicked edit:', param.activity);
-    // })
+    editBtn.addEventListener('click', function() {
+        // console.log('You clicked edit:', param.activity);
+        editTask(tasks[position]);
+        taskPosition = position;
+    })
     btnGroupDiv.appendChild(editBtn);
 
     const delBtn = document.createElement('button');

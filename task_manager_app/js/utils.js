@@ -40,5 +40,13 @@ const reset = () => {
 //     name.setAttribute(attr, attrName);
 // }
 
+const editTask = (task) => {
+    activityInput.value = task.activity;
+    dateInput.value = task.date;
+    timeInput.value = task.time;
 
-export { validateForm, getActivityFields, reset };
+    const addTaskBtn = document.getElementById('task-form-btn');
+    addTaskBtn.value = 'Update Task';
+}
+
+export { validateForm, getActivityFields, reset, editTask };
