@@ -1,7 +1,7 @@
 import { validateForm, getActivityFields, reset, editTask } from './utils.js'
 
 const taskFormBtn = document.querySelector("#task-form-btn");
-const tasks = [];
+const tasks = JSON.parse(localStorage.getItem('tasks'));
 let taskPosition;
 
 // event listener for 'Add Task' button
@@ -22,6 +22,8 @@ taskFormBtn.addEventListener("click", function () {
     } else {
         tasks.push(taskValues);
     }
+    const stringifyTasks = JSON.stringify(tasks);
+    localStorage.setItem('tasks', stringifyTasks);
 
     displayTaskItems(tasks);
 });
@@ -98,6 +100,8 @@ const createTaskItem = (param, position) => {
     delBtn.setAttribute('class', 'btn-danger');
     delBtn.addEventListener('click', function() {
         tasks.splice(position, 1);
+        const stringifyTasks = JSON.stringify(tasks);
+        localStorage.setItem('tasks', stringifyTasks);
         displayTaskItems(tasks);
     })
 
@@ -109,3 +113,5 @@ const createTaskItem = (param, position) => {
 
     return cardDiv;
 }
+
+displayTaskItems(tasks);
