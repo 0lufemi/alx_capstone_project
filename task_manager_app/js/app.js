@@ -2,6 +2,7 @@ import { validateForm, getActivityFields, reset, editTask } from './utils.js'
 
 const taskFormBtn = document.querySelector("#task-form-btn");
 const tasks = JSON.parse(localStorage.getItem('tasks'));
+// const tasks = [];
 let taskPosition;
 
 // event listener for 'Add Task' button
