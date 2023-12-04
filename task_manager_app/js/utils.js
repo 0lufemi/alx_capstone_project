@@ -1,6 +1,7 @@
 const activityInput = document.querySelector('#activity-field');
 const dateInput = document.querySelector('#date-field');
 const timeInput = document.querySelector('#time-field');
+// const checkbox = document.querySelector('#checkbox');
 
 // Validate task forms
 const validateForm = () => {
@@ -24,8 +25,15 @@ const getActivityFields = () => {
     const activity = activityInput.value;
     const date = dateInput.value;
     const time = timeInput.value;
+    // const taskStatus = 'UNDONE';
+    // let taskStatus;
+    // if (checkbox.checked) {
+    //     taskStatus = 'DONE';
+    // } else {
+    //     taskStatus = 'UNDONE';
+    // }
 
-    return {activity, date, time, taskStatus: 'UNDONE'};
+    return {activity, date, time};
 }
 
 // Reset form fields after adding task

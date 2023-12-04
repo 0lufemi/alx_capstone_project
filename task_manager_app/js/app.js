@@ -1,8 +1,8 @@
 import { validateForm, getActivityFields, reset, editTask } from './utils.js'
 
 const taskFormBtn = document.querySelector("#task-form-btn");
-const tasks = JSON.parse(localStorage.getItem('tasks'));
-// const tasks = [];
+// const tasks = JSON.parse(localStorage.getItem('tasks'));
+const tasks = [];
 let taskPosition;
 
 // event listener for 'Add Task' button
@@ -59,8 +59,21 @@ const createTaskItem = (param, position) => {
     imgGroupDiv.appendChild(img);
 
     const input = document.createElement('input');
+    const taskStatusPara = document.createElement('p');
+    // taskStatusPara.textContent = param.taskStatus;
+
     input.setAttribute('type', 'checkbox');
+    input.setAttribute('class', 'checkbox');
     imgGroupDiv.appendChild(input);
+
+    const checkbox = document.querySelector('.checkbox');
+    checkbox.addEventListener('change', () => {
+        if (checkbox.checked) {
+            taskStatusPara.textContent = 'COMPLETED';
+        } else {
+            taskStatusPara.textContent = 'NOT COMPLETED';
+        }
+    });
 
     const cardBodyDiv = document.createElement('div');
     cardBodyDiv.setAttribute('class', 'card-body');
@@ -76,8 +89,12 @@ const createTaskItem = (param, position) => {
     const dateTimePara = document.createElement('p');
     dateTimePara.textContent = `${param.date} : ${param.time}`;
 
-    const taskStatusPara = document.createElement('p');
-    taskStatusPara.textContent = param.taskStatus;
+    // const checkbox = document.querySelector('#checkbox');
+    // if (!checkbox.checked) {
+    //     taskStatusPara.textContent = param.taskStatus;
+    // } else {
+    //     taskStatusPara.textContent = 'DONE';
+    // }
 
     paraDiv.appendChild(dateTimePara);
     paraDiv.appendChild(taskStatusPara);
