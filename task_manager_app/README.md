@@ -9,7 +9,7 @@ Task Manager Application that helps users create to-do tasks, set it's time & da
 ## Technologies Used:
 HTML, CSS & Javascript
 
-## Screenshots or D
+## Screenshots or Demo
 [App Demo](https://drive.google.com/file/d/1mOS-PD5nQadI9zSr_s7fYElpj-b4KN3G/view?usp=drive_link)
 
 ## Roadmap and future enhancements:
