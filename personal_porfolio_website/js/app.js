@@ -1,5 +1,9 @@
-const section = document.querySelectorAll('.section');
-const controls = document.querySelectorAll('.controls');
-const control = document.querySelectorAll('.control');
-const bodySection = document.querySelectorAll('.main-content');
+const sections = document.querySelectorAll('.section');
+const sectBtns = document.querySelectorAll('.controls');
+const sectBtn = document.querySelectorAll('.control');
+const allSections = document.querySelectorAll('.main-content');
 
+const pageTransitions = () => {
+    // Button click active class
+    
+}
