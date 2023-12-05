@@ -62,13 +62,15 @@ const createTaskItem = (param, position) => {
     const taskStatusPara = document.createElement('p');
     // taskStatusPara.textContent = param.taskStatus;
 
+    // const checkboxId = `checkbox-${position}`;
     input.setAttribute('type', 'checkbox');
     input.setAttribute('class', 'checkbox');
     imgGroupDiv.appendChild(input);
 
-    const checkbox = document.querySelector('.checkbox');
-    checkbox.addEventListener('change', () => {
-        if (checkbox.checked) {
+    const checkboxEl = imgGroupDiv.querySelector('.checkbox');
+    taskStatusPara.textContent = 'NOT COMPLETED';
+    checkboxEl.addEventListener('change', () => {
+        if (checkboxEl.checked) {
             taskStatusPara.textContent = 'COMPLETED';
         } else {
             taskStatusPara.textContent = 'NOT COMPLETED';

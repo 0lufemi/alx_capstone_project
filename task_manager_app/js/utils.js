@@ -43,11 +43,6 @@ const reset = () => {
     timeInput.value = '';
 }
 
-// const htmlElementCreator = (name, element, attr, attrName) => {
-//     name = document.createElement(element);
-//     name.setAttribute(attr, attrName);
-// }
-
 const editTask = (task) => {
     activityInput.value = task.activity;
     dateInput.value = task.date;
