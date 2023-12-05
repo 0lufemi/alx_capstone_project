@@ -13,7 +13,7 @@ HTML, CSS & Javascript
 [App Demo](https://drive.google.com/file/d/1mOS-PD5nQadI9zSr_s7fYElpj-b4KN3G/view?usp=drive_link)
 
 ## Roadmap and future enhancements:
-Next functionality: To make the app responsive on different screens.
+Next functionality: To make the app responsive on different screens.<br>
 In the future, I hope to make the User Interface more beautiful as well as turn it into a mobile app.
 
 ## Contact information:
