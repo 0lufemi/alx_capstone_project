@@ -1,14 +1,22 @@
 # Task Manager Application
 
 ## Project Overview:
-* Provide a brief description of the project, its purpose, and goals. Explain what problem the project aims to solve or what value it brings to users.
+Task Manager Application
+
 ## Features and Functionality:
-* List the main features and functionalities of the project. Describe how users can interact with the application and any notable aspects or unique selling points.
+Task Manager Application that helps users create to-do tasks, set it's time & date, edit and delete task. It also allows user mark as 'COMPLETED'.
+
 ## Technologies Used:
-* Specify the technologies, frameworks, and languages used in the project. This can include HTML, CSS, JavaScript, Python, specific libraries, or frameworks like Flask, and any other tools or services utilized.
-## Screenshots or Demo:
-* Include screenshots or a link to a live demo if available. Visual representations can help readers understand the project’s appearance and functionality.
+HTML, CSS & Javascript
+
+## Screenshots or D
+[App Demo](https://drive.google.com/file/d/1mOS-PD5nQadI9zSr_s7fYElpj-b4KN3G/view?usp=drive_link)
+
 ## Roadmap and future enhancements:
-* Share any future plans or potential improvements for the project. This could include additional features, performance optimizations, or scalability considerations.
+Next functionality: To make the app responsive on different screens.
+In the future, I hope to make the User Interface more beautiful as well as turn it into a mobile app.
+
 ## Contact information:
-* Include your name, along with contact information or links to personal portfolios or social media profiles.
+Olufemi Odunlami <br>
+[LinkedIn](https://www.linkedin.com/in/olufemiodunlami) <br>
+[Portfolio](In progress)
