@@ -18,11 +18,11 @@ const pageTransitions = () => {
         // console.log(e.target);
         const id = e.target.dataset.id;
         if (id) {
-            //remove selected from other buttons
-            sectBtns.forEach((btn) => {
-                btn.classList.remove('active')
-            })
-            e.target.classList.add('active')
+            //remove 'active' class from other buttons
+            // sectBtns.forEach((btn) => {
+            //     btn.classList.remove('active')
+            // })
+            // e.target.classList.add('active')
 
             //hide other sections
             sections.forEach((section) => {

@@ -51,7 +51,6 @@ section {
   left: 0;
   top: 0;
   padding: 3rem 18rem;
-  border: 5px solid red;
 }
 
 .section {
@@ -82,6 +81,25 @@ section {
   display: none;
   transform: translateY(0) scale(1);
   background-color: blue;
+}
+
+.sec5 {
+  display: none;
+  transform: translateY(0) scale(1);
+  background-color: yellowgreen;
+}
+
+.active {
+  display: block;
+  animation: scaleAnim 0.5s ease-in-out;
+}
+@keyframes scaleAnim {
+  0% {
+    transform: translateY(-100%) scaleY(0);
+  }
+  100% {
+    transform: translateY(0) scaleY(1);
+  }
 }
 
 .controls {
